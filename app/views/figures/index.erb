@@ -1,0 +1,11 @@
+<h1>Figures</h1>
+<a href="/figures/new" class="btn btn-default">Create Figure</a><br>
+
+<% @figures.each do |figure| %>
+<a href="/figures/<%= figure.id %>">
+  <%= figure.name %></a><br>
+<% end %>
+<br>
+<br>
+<a href="/landmarks" class="btn btn-default">Go to Landmarks</a>
+<a href="/" class="btn btn-default">Go to Home Page</a>

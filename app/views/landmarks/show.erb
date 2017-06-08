@@ -1,3 +1,4 @@
+<h1><%= @landmark.name %></h1>
 <table>
   <tr>
     <th>Name</th>
@@ -7,4 +8,6 @@
     <td><%= @landmark.name %></td>
     <td><%= @landmark.year_completed %></td>
   </tr>
-<table>
+  <table>
+    <a href="/landmarks/<%= @landmark.id %>/edit" class="btn btn-default">Edit</a>
+    <a href="/landmarks" class="btn btn-default">Landmarks Index</a>
