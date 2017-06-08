@@ -2,7 +2,14 @@
 <html>
   <head>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>New York City Historical Database</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <!--
      Frank Sinatra
 
@@ -33,9 +40,21 @@
   -->
   </head>
   <body>
+
+    <nav>
+      <div class="nav-wrapper teal lighten-2">
+        <a href="/" class="brand-logo">
+          <i class="material-icons right">room</i>Home</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="/figures">Figures</a>
+          </li>
+          <li>
+            <a href="/landmarks">Landmarks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <%= yield %>
     </div>
-  </body>
-
-</html>

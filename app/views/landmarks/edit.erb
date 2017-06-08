@@ -1,4 +1,4 @@
-<h1>Edit Landmark</h1>
+<h2>Edit Landmark</h2>
 
 <form action="/landmarks/<%= @landmark.id %>" method="post">
   <input type="hidden" name="_method" value="put">
@@ -7,6 +7,6 @@
   <label>Year Completed</label>
   <input type="text" name="landmark[year_completed]" id="year_completed" value="<%= @landmark.year_completed %>"><br>
   <br>
-  <button type="submit">Edit Landmark</button><br>
-  <a href="/landmarks/<%= @landmark.id %>" class="btn btn-default">Cancel</a>
+  <button type="submit" class="btn teal lighten-2">Edit Landmark</button><br>
+  <a href="/landmarks/<%= @landmark.id %>" class="btn teal lighten-2">Cancel</a>
 </form>
